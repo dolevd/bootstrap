@@ -703,6 +703,7 @@ describe('uib-dropdown', function() {
     });
   });
 
+  // issue #5942
   describe('using dropdown-append-to-body with dropdown-menu-right class', function() {
     function dropdown() {
       return $compile('<li style="float: right;" uib-dropdown dropdown-append-to-body><a href uib-dropdown-toggle>Toggle menu</a><ul uib-dropdown-menu class="dropdown-menu-right" id="dropdown-menu"><li><a href>Hello On Body</a></li></ul></li>')($rootScope);
